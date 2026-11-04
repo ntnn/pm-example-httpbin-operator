@@ -87,7 +87,6 @@ jobs:
     with:
       appVersion: ${{ needs.create-version.outputs.version }}
       chart: example-httpbin-operator
-      targetRepository: platform-mesh/helm-charts
 
   sbom:
     if: github.ref == 'refs/heads/main'
