@@ -150,7 +150,3 @@ type HttpBinDeploymentList struct {
 	metav1.ListMeta `json:"metadata,omitempty"`
 	Items           []HttpBinDeployment `json:"items"`
 }
-
-func init() {
-	SchemeBuilder.Register(&HttpBinDeployment{}, &HttpBinDeploymentList{})
-}
